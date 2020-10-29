@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TUGAS FORM</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=date], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=number], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            }
+            input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <center><h1>STUDENT REGISTRATION FORM</h1></center>
+	<form>
+
+		<h2>PERSONAL INFORMATION</h2>
+		<hr/>
+		<table style="width: 80%">
+			<tr>
+				<td style="width: 20%">NAME</td>
+				<td>:</td>
+				<td><input style="width:100%" placeholder="name" required="" type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>DATE OF BIRTH</td>
+				<td>:</td>
+				<td><input style="width:100%" type="date" name="date birth"></td>
+			</tr>
+			<tr>
+				<td>RELAGION</td>
+				<td>:</td>
+				<td>
+					<select style="width:100%" name="relegion">
+						<option value="Agama"> RELAGION</option>
+						<option value="Islam">Islam</option>
+						<option value="Kristen">Kristen</option>
+						<option value="Hindu">Hindu</option>
+						<option value="Budha">Budha</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 20%">GENDER</td>
+				<td>:</td>
+				<td>
+					<label><input type="radio" name="Gender" value="Male" /> Male</label>
+           			<label><input type="radio" name="Gender" value="Female" /> Female</label>
+				</td>
+			</tr>
+			
+		</table>
+
+		<h2>CONTACT INFORMATION</h2>
+		<hr/>
+		<table style="width: 80%">
+			<tr>
+				<td style="width: 20%">ADDRESS</td>
+				<td>:</td>
+				<td><textarea style="width:100%" name="ADDRESS"></textarea></td>
+			</tr>
+			<tr>
+				<td>COUNTRY</td>
+				<td>:</td>
+				<td><input style="width:100%" required="" placeholder="Country" type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>CODE ZIP</td>
+				<td>:</td>
+				<td><input style="width:100%" required="" placeholder="code zip" type="number" name="nama"></td>
+			</tr>
+			<tr>
+				<td>NUMBER PHONE</td>
+				<td>:</td>
+				<td><input style="width:100%" required="" placeholder="Number"  type="number" name="nama"></td>
+			</tr>
+			<tr>
+				<td>EMAIL ACTIVE</td>
+				<td>:</td>
+				<td><input style="width:100%" required="" placeholder="Email" type="text" name="nama"></td>
+			</tr>	
+		</table>
+			<h2>SCHOOL INFORMATION</h2>
+<hr/>
+		<table style="width:45%">
+			<tr>
+				<td>NAME SCHOOL</td>
+				<td>:</td>
+				<td><input style="width:100%" placeholder="school" type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>TEST SCORE</td>
+				<td>:</td>
+				<td><input style="width:100%" placeholder="SCHORE" type="text" name="nama"></td>
+			</tr>	
+			<tr>
+				<td>SCHOOL YEAR</td>
+				<td>:</td>
+				<td><input style="width:100%" placeholder="YEAR" type="text" name="nama"></td>
+			</tr>	
+		</table>
+			<h2>PROGRAM REGISTRATION</h2>
+			<hr/>
+		<table>
+			<tr>
+				<td>SELECTED DEPARTEMENTS</td>
+				<td>:</td>
+				<td>
+					<select style="width:100%"  name="DEPARTEMENTS">
+						<option value="DEPARTEMENTS">DEPARTEMENTS</option>
+						<option value="Multimedia">Multimedia</option>
+						<option value="Chemical">Chemical industry</option>
+						<option value="Mechanical">Mechanical Engineering</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>REGISTRATION OPTIONS</td>
+				<td>:</td>
+				<td>
+					<input type="radio" value="Reguler" name="tipe">
+					<label id="Reguler">Reguler</label>
+					<input type="radio" value="Prestasi" name="tipe">
+					<label id="Prestasi">Achievment</label>
+					<input type="radio" value="Beasiswa" name="tipe">
+					<label id="Shocalship">Shocalship</label>
+				</td>
+			</tr>
+		</table>
+			<hr/>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+	</body>
+	</html>
